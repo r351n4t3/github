@@ -1,1 +1,29 @@
-<
+<!doctype html>
+<html lang="en">
+<head>
+<style type="text/css">
+body{background-color:#777;}
+#myCanvas {border:#000 solid 1px; background-color:#fff; padding:20px 20px;}
+</style>
+<script type="text/javascript">
+function draw() {
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#FF0000";
+    ctx.fillRect(20,20,150,100);
+}
+window.onload = draw;
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="350">
+<!--
+All the style, animation and other attributes for
+are customized through JavaScript by calling on 
+the id="name" or class="name" of the <canvas>
+The JS can be an internal or external file.
+-->
+</canvas>
+</body> 
+</html>
+
